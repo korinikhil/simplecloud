@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
+.body {
+  font-family: "Piazzolla", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300
+}
+html{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* foote code  */
+footer {
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: auto;
+}
+
+@media only screen and(max-width:768px) {
+
+    .header_data{
+        background-color: red;
+    }
+    
+}

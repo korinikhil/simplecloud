@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+    </head>
+    <body class="body">
+        {{>navbar}}
+        <!-- header section  -->
+        <div class="main mt-7">
+            <div class="header_data sm:m-10 md:flex relative sm:block justify-around">
+                <!-- Lottie animation -->
+                <div class="img w-[400px] h-[400px] relative">
+                    <img src="/images/img3.png" class="drop-shadow-lg drop-shadow-blue-800" alt="">
+                </div>
+                <div class="textdata flex flex-col item-center justify-center">
+                    <p>Welcome to Weather app</p>
+                    <p class="capitalize text-2xl my-3">
+                        Get the Latest
+                        <span class="text-blue-700">Weather</span>
+                        info of your city
+                    </p>
+                    <a href="/weather " class=" w-[9.1rem] rounded-md">
+                        <button class="outline-double hover:outline-none py-1 px-8 m-2 hover:bg-blue-300 duration-300 shadow-md hover:shadow-blue-200 rounded-md border ">Get Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer code here -->
+        <footer>
+            <p>Created with ❤️ By Codex Nikhil</p>
+        </footer>
+    </body>
+</html>

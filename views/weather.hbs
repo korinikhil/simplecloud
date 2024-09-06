@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="body">
+    {{>navbar}}
+    <div class="div mt-2">
+        <div class="div2 flex justify-center">
+            <form action="">
+                <input type="text" class="rounded-md border border-slate-300 outline-none py-1 px-2" id="inputData" placeholder="Enter Your City ">
+                <input class="border border-slate-300 rounded-md py-1 px-2 pointer" id="submiteBtn" type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+
+    <div class="main_div border border-slate-300 mx-[22rem] my-12 h-[40vh]">
+        <div class="tempDiv">
+            <div class="top_layer flex bg-gray-700 text-white justify-center">
+                <div class="div flex justify-between w-[30%]">
+                    <p id="day"></p>
+                    <p id="date"></p>
+                </div>
+            </div>
+            <div class="main">
+                <h2 id="City_name" class="text-2xl py-2"></h2><br>
+                <div class="main_layer justify-center flex">
+                    <div class="middle_layer relative top-[4rem] text-6xl flex justify-around w-[12rem]">
+                        <p id="temp"><span>0</span> <sup>o</sup><span class="text-3xl space-x-3 pl-2">C</span></p>
+                        <p id="temp_status"><i class="fa-solid fa-cloud"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        let day = document.getElementById('day');
+        let date = document.getElementById('date');
+
+        let today = new Date();
+        let dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        day.innerHTML = dayName[today.getDay()];
+
+        date.innerHTML = today.toLocaleDateString();
+    </script>
+</body>
+</html>
